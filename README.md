@@ -19,7 +19,7 @@
 |                     Auto games                     |     ✅     |
 
 
-## [Settings](https://github.com/datboycode/moonbixBot/main/.env-example/)
+## [Settings](https://github.com/datboycode/moonbixBot/blob/main/.env.example)
 |              Settings              |                                     Description                                      |
 |:----------------------------------:|:------------------------------------------------------------------------------------:|
 |       **API_ID / API_HASH**        |       Platform data from which to run the Telegram session (default - android)       |
@@ -49,7 +49,7 @@ Before you begin, make sure you have the following installed:
 You can download the [**repository**](https://github.com/datboycode/moobixBot) by cloning it to your system and installing the necessary dependencies:
 ```shell
 git clone https://github.com/datboycode/moonbixBot.git
-cd moonbix
+cd moonbixBot
 ```
 
 Then you can do automatic installation by typing:
