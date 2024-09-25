@@ -1,40 +1,44 @@
+[![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/Binance_Moonbix_bot/start?startApp=ref_6110684070&startapp=ref_6110684070&utm_medium=web_share_copy)
+
+# 🚀AUTO FARMING FOR MOONBIX 🚀
+
 ## Recommendation before use
 
-# Join the bot [here](https://t.me/Binance_Moonbix_bot/start?startApp=ref_6624523270&startapp=ref_6624523270&utm_medium=web_share_copy)
+# 🔥🔥 PYTHON version must be 3.10 🔥🔥
 
-> [!WARNING]
-> I am not responsible for your account. Please consider the potential risks before using this bot. <br>
-> IF YOU ARE RUNNING MORE THAN 1 ACCOUNT PLEASE ADD PROXY FOR EACH ACCOUNT OR RUN WITHOUT MULTI-THREAD
-
-# 🔥🔥 Use PYTHON 3.10 - 3.11.5 🔥🔥
+> 🇷 🇺 README in russian available [here](README-RU.md)
 
 ## Features  
-| Feature                                                     | Supported  |
-|---------------------------------------------------------------|:----------------:|
-| Multithreading                                                |        ✅        |
-| Proxy binding to session                                      |        ✅        |
-| Auto ref                                                      |        ✅        |
-| Auto checkin                                                  |        ✅        |
-| Auto play game                                                |        ✅        |
-| Support for pyrogram .session                                 |        ✅        |
-Auto get maxium points each game        |        ✅        |
-## [Settings](https://github.com/vanhbakaa/moonbix-bot/blob/main/.env-example)
-| Settings | Description |
-|----------------------------|:-------------------------------------------------------------------------------------------------------------:|
-| **API_ID / API_HASH**      | Platform data from which to run the Telegram session (default - android)                                      |       
-| **REF_LINK**               | Put your ref link here (default: my ref link)                                                                 |
-| **AUTO_TASK**              | Auto do task (default: True)                                                                                  |
-| **AUTO_PLAY_GAME**         | AUTO PLAY GAME (default: True)                                                                                |
-| **USE_PROXY_FROM_FILE**    | Whether to use a proxy from the bot/config/proxies.txt file (True / False)                                    |
+|                      Feature                       | Supported |
+|:--------------------------------------------------:|:---------:|
+|                   Multithreading                   |     ✅     |
+|              Proxy binding to session              |     ✅     |
+|           Support for pyrogram .session            |     ✅     |
+| Auto-register your account with your referral link |     ✅     |
+|                     Auto tasks                     |     ✅     |
+|                     Auto games                     |     ✅     |
 
+
+## [Settings](https://github.com/datboycode/moonbixBot/main/.env-example/)
+|              Settings              |                                     Description                                      |
+|:----------------------------------:|:------------------------------------------------------------------------------------:|
+|       **API_ID / API_HASH**        |       Platform data from which to run the Telegram session (default - android)       |
+|    **USE_RANDOM_DELAY_IN_RUN**     |                                  Name saying itself                                  |
+|      **RANDOM_DELAY_IN_RUN**       |                  Random seconds delay for ^^^ (default is [5, 30])                   |
+| **RANDOM_DELAY_BETWEEN_CYCLES**    |     Random minutes delay between cycles (default is [20, 40, 60, 80])                |
+|            **USE_REF**             |             Register accounts with ur referral or not (default - False)              |
+|             **REF_ID**             |       Your referral argument (comes after app/startapp? in your referral link)       |
+|      **USE_PROXY_FROM_FILE**       |     Whether to use a proxy from the `bot/config/proxies.txt` file (True / False)     |
+|       **ENABLE_AUTO_TASKS**        |                           Enable auto tasks (True / False)                           |
+|     **ENABLE_AUTO_PLAY_GAMES**     |                        Enable auto play games (True / False)                         ||
 
 ## Quick Start 📚
 
-To install libraries and run bot - open run.bat on Windows
+To fast install libraries and run bot - open run.bat on Windows or run.sh on Linux
 
 ## Prerequisites
 Before you begin, make sure you have the following installed:
-- [Python](https://www.python.org/downloads/) **version 3.10 - 3.11.5**
+- [Python](https://www.python.org/downloads/) **version 3.10**
 
 ## Obtaining API Keys
 1. Go to my.telegram.org and log in using your phone number.
@@ -42,13 +46,14 @@ Before you begin, make sure you have the following installed:
 3. Record the API_ID and API_HASH provided after registering your application in the .env file.
 
 ## Installation
-You can download the [**repository**](https://github.com/vanhbakaa/Kaia-bot/) by cloning it to your system and installing the necessary dependencies:
+You can download the [**repository**](https://github.com/datboycode/moobixBot) by cloning it to your system and installing the necessary dependencies:
 ```shell
-git clone https://github.com/vanhbakaa/moonbix-bot.git
-cd moonbix-bot
+git clone https://github.com/datboycode/moonbixBot.git
+cd moonbix
 ```
 
 Then you can do automatic installation by typing:
+(If you are not using Proxies please make sure you remove the example text in proxies.txt before running the bot)
 
 Windows:
 ```shell
@@ -62,6 +67,7 @@ run.sh
 
 # Linux manual installation
 ```shell
+sudo sh install.sh
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
@@ -72,9 +78,9 @@ python3 main.py
 
 You can also use arguments for quick start, for example:
 ```shell
-~/moonbix-bot >>> python3 main.py --action (1/2)
+~/moonbix >>> python3 main.py --action (1/2)
 # Or
-~/moonbix-bot >>> python3 main.py -a (1/2)
+~/moonbix >>> python3 main.py -a (1/2)
 
 # 1 - Run clicker
 # 2 - Creates a session
@@ -85,30 +91,16 @@ You can also use arguments for quick start, for example:
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-copy .env-example .env
-# Here you must specify your API_ID and API_HASH, the rest is taken by default
+copy .env-example .env # Here you must specify your API_ID and API_HASH, the rest is taken by default
 python main.py
 ```
 
 You can also use arguments for quick start, for example:
 ```shell
-~/moonbix-bot >>> python main.py --action (1/2)
+~/moonbix >>> python main.py --action (1/2)
 # Or
-~/moonbix-bot >>> python main.py -a (1/2)
+~/moonbix >>> python main.py -a (1/2)
 
 # 1 - Run clicker
 # 2 - Creates a session
 ```
-# Support This Project
-
-If you'd like to support the development of this project, please consider making a donation. Every little bit helps!
-
-👉 **[Click here to view donation options](https://github.com/vanhbakaa/Donation/blob/main/README.md)** 👈
-
-Your support allows us to keep improving the project and bring more features!
-
-Thank you for your generosity! 🙌
-
-### Contacts
-
-For support or questions, you can contact me [![Static Badge](https://img.shields.io/badge/Telegram-Channel-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/airdrop_tool_vanh)

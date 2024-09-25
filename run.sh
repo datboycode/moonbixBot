@@ -1,6 +1,5 @@
-#!/bin/bash
-
-# Проверка на наличие папки venv
+#!/bin/bash-low-unrelated-histories
+# Check for the presence of the venv folder
 if [ ! -d "venv" ]; then
     echo "Creating virtual environment..."
     python3 -m venv venv
@@ -9,7 +8,7 @@ fi
 echo "Activating virtual environment..."
 source venv/bin/activate
 
-# Проверка на наличие установленного флага в виртуальном окружении
+# Check for the presence of a set flag in the virtual environment
 if [ ! -f "venv/installed" ]; then
     if [ -f "requirements.txt" ]; then
 		echo "Installing wheel for faster installing"
@@ -31,8 +30,14 @@ else
 	echo "Skipping .env copying"
 fi
 
+#Updating the local repository without deleting changes
+git stash
+git pull
+git stash pop
+
 echo "Starting the bot..."
 python3 main.py
 
 echo "done"
 echo "PLEASE EDIT .ENV FILE"
+

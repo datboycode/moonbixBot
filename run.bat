@@ -5,6 +5,7 @@ if not exist venv (
     python -m venv venv
 )
 
+
 echo Activating virtual environment...
 call venv\Scripts\activate
 
@@ -29,9 +30,15 @@ if not exist .env (
 	echo Skipping .env copying
 )
 
+::Updating the local repository without deleting changes
+git stash
+git pull
+git stash pop
+
 echo Starting the bot...
 python main.py
 
 echo done
 echo PLEASE EDIT .ENV FILE
 pause
+

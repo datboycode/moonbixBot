@@ -1,3 +1,5 @@
+from fake_useragent import UserAgent
+
 headers = {
     'Accept': '*/*',
     'Accept-Language': 'en-US',
@@ -10,7 +12,7 @@ headers = {
     "Cache-Control": "no-cache",
     "Pragma": "no-cache",
     "Priority": "u=1, i",
-    "Fvideo-Id": "330a0c10361aac50ad025725adfc172d3af2489a",
+    "Fvideo-Id": "",
     "Fvideo-Token": "",
     "Lang": "en",
     'Origin': 'https://www.binance.com',
@@ -18,6 +20,6 @@ headers = {
     'Sec-Fetch-Dest': 'empty',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Site': 'same-origin',
-    'User-Agent': 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.165 Mobile Safari/537.36',
+    'User-Agent': UserAgent(os="android").random,
     "X-Growth-Token": ""
 }
