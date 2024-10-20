@@ -74,9 +74,9 @@ python main.py
 ```
 You can also use arguments for quick start, for example:
 ```shell
-~/moonbix-bot >>> python main.py --action (1/2)
+~/moonbixBot >>> python main.py --action (1/2)
 # Or
-~/moonbix-bot >>> python main.py -a (1/2)
+~/moonbixBot >>> python main.py -a (1/2)
 
 # 1 - Run clicker
 # 2 - Creates a session
@@ -87,16 +87,16 @@ You can also use arguments for quick start, for example:
 > pkg update && pkg upgrade -y
 > pkg install python rust git -y
 > git clone https://github.com/datboycode/moonbixBot.git
-> cd moonbix-bot
+> cd moonbixBot
 > pip install -r requirements.txt
 > python main.py
 ```
 
 You can also use arguments for quick start, for example:
 ```termux
-~/moonbix-bot > python main.py --action (1/2)
+~/moonbixBot > python main.py --action (1/2)
 # Or
-~/moonbix-bot > python main.py -a (1/2)
+~/moonbixBot > python main.py -a (1/2)
 
 # 1 - Run clicker
 # 2 - Creates a session 
